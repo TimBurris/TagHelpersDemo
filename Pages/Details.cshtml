@@ -1,0 +1,27 @@
+﻿@page
+@model TagHelpersDemo.Pages.DetailsModel
+@{
+}
+
+<div class="row">
+    <div class="col border pb-2 ">
+        <div class="d-flex">
+            <label class="opacity-50 small mb-0"
+                   asp-for="JobName">Job Name</label>
+        </div>
+        <span>@Model.JobName</span>
+    </div>
+</div>
+
+<hr />
+<div class="row">
+
+    <display-field asp-for="JobName"
+                   label-text="Job Name"
+                   container-css="col border pb-2 " />
+</div>
+
+
+
+
+

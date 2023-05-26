@@ -1,0 +1,118 @@
+﻿@page
+@model TagHelpersDemo.Pages.EditModel
+@{
+}
+
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <!-- Job Card -->
+        <div class="card accent-card mb-3">
+            <div class="card-header">Job</div>
+            <div class="card-body">
+                @*<div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Input.JobName" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.JobName">Job Name</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.JobName"></span>
+                    </div>
+                </div>*@
+                
+                <float-form-input asp-for="Input.JobName" label-text="Job NameX"/>
+
+                <div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Input.MailDate" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.MailDate">Mail Date</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.MailDate"></span>
+                    </div>
+                </div>
+                <div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="date" asp-for="Input.SalesRepName" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.SalesRepName">Sales Rep Name</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.SalesRepName"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-12 col-lg-6">
+        <!-- Extras card-->
+        <div class="card accent-card mb-3">
+            <div class="card-header">Extras</div>
+            <div class="card-body">
+
+                <div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Input.NumberOfExtraMailings" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.NumberOfExtraMailings"># of Extras</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.NumberOfExtraMailings"></span>
+                    </div>
+                </div>
+                <div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Input.ExtrasAddressLine1" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.ExtrasAddressLine1">Line 1</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.ExtrasAddressLine1"></span>
+                    </div>
+                </div>
+                <div class="form-group has-validation">
+                    <div class="form-floating">
+                        <input type="text" asp-for="Input.ExtrasAddressLine2" autocomplete="off" role="presentation" class="form-control">
+                        <label asp-for="Input.ExtrasAddressLine2">Line 2</label>
+                    </div>
+                    <div class="invalid-feedback">
+                        <span asp-validation-for="Input.ExtrasAddressLine2"></span>
+                    </div>
+                </div>
+                <div class="row" id="extrasAddressContainer">
+                    <div class="col-md">
+                        <div class="form-group has-validation">
+                            <div class="form-floating">
+                                <input type="text" asp-for="Input.ExtrasAddressZipCode" autocomplete="off" role="presentation" class="form-control">
+                                <label asp-for="Input.ExtrasAddressZipCode">Zip/Postal Code</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span asp-validation-for="Input.ExtrasAddressZipCode"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group has-validation">
+                            <div class="form-floating">
+                                <input type="text" asp-for="Input.ExtrasAddressCity" autocomplete="off" role="presentation" class="form-control">
+                                <label asp-for="Input.ExtrasAddressCity">City</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span asp-validation-for="Input.ExtrasAddressCity"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group has-validation">
+                            <div class="form-floating">
+                                <input type="text" asp-for="Input.ExtrasAddressStateOrProvince" autocomplete="off" role="presentation" class="form-control">
+                                <label asp-for="Input.ExtrasAddressStateOrProvince">State/Province</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                <span asp-validation-for="Input.ExtrasAddressStateOrProvince"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
